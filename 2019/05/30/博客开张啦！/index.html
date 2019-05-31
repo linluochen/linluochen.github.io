@@ -431,6 +431,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/05/30/博客开张啦！/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/05/30/博客开张啦！/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -543,7 +556,9 @@
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDQ5NC8yMTAyNQ=="></div>
+      
+        <div id="gitment-container"></div>
+      
     </div>
 
   
@@ -694,6 +709,20 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/qq_36537546" title="https://blog.csdn.net/qq_36537546" rel="noopener" target="_blank">csdn</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -864,18 +893,38 @@
 
 
   
-    <script>
-  window.livereOptions = {
-    refer: '2019/05/30/博客开张啦！/'
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
+    <!-- LOCAL: You can save these files to your site and update links -->
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+<!-- END LOCAL -->
+
+<script>
+  function renderGitment() {
+    var gitment = new Gitmint({
+      <!-- id: window.location.pathname, -->
+			id: '1559208873000',
+      owner: 'linluochen',
+      repo: 'https://linluochen.github.io/',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+      
+      oauth: {
+      
+      
+        client_secret: '4a2d60ac9513d7014e0b31ebe80810a50022d040',
+      
+        client_id: '911a6e94c9d4c8a96d20'
+      }
+    });
+    gitment.render('gitment-container');
+  }
+
+  
+    renderGitment();
+  
 </script>
 
   
