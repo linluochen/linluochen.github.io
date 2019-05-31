@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Linluochen丶Blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://linluochen.cn/"/>
+  <updated>2019-05-31T02:02:11.410Z</updated>
+  <id>http://linluochen.cn/</id>
+  
+  <author>
+    <name>林洛尘</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客开张啦！</title>
+    <link href="http://linluochen.cn/2019/05/30/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%BC%A0%E5%95%A6%EF%BC%81/"/>
+    <id>http://linluochen.cn/2019/05/30/博客开张啦！/</id>
+    <published>2019-05-30T09:34:33.000Z</published>
+    <updated>2019-05-31T02:02:11.410Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="博客简介"><a href="#博客简介" class="headerlink" title="博客简介"></a>博客简介</h2><p>博客第一次开张，咱也不知道说点啥，反正就是激动的心，颤抖的手，就不说酒了，大家都是成年人，喝酒多不健康了！！</p><a id="more"></a><h2 id="内容啥的"><a href="#内容啥的" class="headerlink" title="内容啥的"></a>内容啥的</h2><p>enmmmm，不知道该说啥了，妈呀，过于激动，容我淡定一会！！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;博客简介&quot;&gt;&lt;a href=&quot;#博客简介&quot; class=&quot;headerlink&quot; title=&quot;博客简介&quot;&gt;&lt;/a&gt;博客简介&lt;/h2&gt;&lt;p&gt;博客第一次开张，咱也不知道说点啥，反正就是激动的心，颤抖的手，就不说酒了，大家都是成年人，喝酒多不健康了！！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="个人日志" scheme="http://linluochen.cn/categories/%E4%B8%AA%E4%BA%BA%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="开张简介" scheme="http://linluochen.cn/tags/%E5%BC%80%E5%BC%A0%E7%AE%80%E4%BB%8B/"/>
+    
+  </entry>
+  
+</feed>
