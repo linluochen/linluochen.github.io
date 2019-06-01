@@ -431,19 +431,6 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/30/博客开张啦！/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/05/30/博客开张啦！/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -555,13 +542,9 @@
           
 
   
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+    <div class="comments" id="gitalk-container">
     </div>
-
-  
+	
 
 
 
@@ -893,37 +876,32 @@
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
+    
 
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: 'itfanr_blog_20190530053433',
-      owner: 'linluochen',
-      repo: 'linluochen.github.io',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '4a2d60ac9513d7014e0b31ebe80810a50022d040',
-      
-        client_id: '911a6e94c9d4c8a96d20'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+  var gitalk = new Gitalk({
+    clientID: '911a6e94c9d4c8a96d20',
+    clientSecret: '4a2d60ac9513d7014e0b31ebe80810a50022d040',
+    repo: 'linluochen.github.io',
+    owner: 'linluochen',
+    admin: ['linluochen'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
 </script>
 
   
