@@ -98,7 +98,7 @@ $(document).ready(function() {
       $(document)
         .on('sidebar.isShowing', function() {
           NexT.utils.isDesktop() && $('body').velocity('stop').velocity(
-            {paddingRight: SIDEBAR_WIDTH},
+            {paddingLeft: SIDEBAR_WIDTH}, //默认为 paddingRight
             SIDEBAR_DISPLAY_DURATION
           );
         })
@@ -169,7 +169,7 @@ $(document).ready(function() {
       this.sidebarEl.trigger('sidebar.isShowing');
     },
     hideSidebar: function() {
-      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingRight: 0});
+      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingLeft: 0}); //默认为 paddingRight
       this.sidebarEl.find('.motion-element').velocity('stop').css('display', 'none');
       this.sidebarEl.velocity('stop').velocity({width: 0}, {display: 'none'});
 

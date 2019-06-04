@@ -1808,7 +1808,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff91;
+  background: #374e87;
 }
 .feed-link,
 .chat {
@@ -2540,4 +2540,29 @@ embed {
 .back-to-top.back-to-top-on {
   bottom: unset;
   top: calc(100vh - 900px - 200px);
+}
+body {
+  background-image: url("https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1559614572&di=6f175d47032e50b4b09e1c5bb506a3bb&src=http://attach.bbs.miui.com/forum/201504/06/162255nc7s39cb6b7pbp3z.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+.main-inner {
+  background: #fff;
+  opacity: 0.8;
+}
+.header-inner {
+  opacity: 0.8;
+}
+.sidebar {
+  left: 0;
+}
+.sidebar-toggle {
+  left: 30px;
+}
+.content {
+  border-radius: 20px;
+  padding: 30px 60px 30px 60px;
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
