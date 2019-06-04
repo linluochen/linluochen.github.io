@@ -1808,7 +1808,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc9b0;
+  background: #a7edad;
 }
 .feed-link,
 .chat {
@@ -2524,20 +2524,6 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
-}
-body {
-  background: url("/images/320153.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-}
-.main-inner {
-  background: #fff;
-  opacity: 0.8;
-}
-.header-inner {
-  opacity: 0.8;
 }
 .back-to-top {
   right: 60px;
