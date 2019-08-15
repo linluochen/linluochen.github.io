@@ -103,13 +103,13 @@
 
 
 
-  <meta name="description" content="先说一下啥是 Spring Boot ?&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spr">
+  <meta name="description" content="先说一下啥是 Spring Boot ?&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 S">
 <meta name="keywords" content="boot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring Boot 实战 ：入门篇">
 <meta property="og:url" content="http://linluochen.cn/2019/06/11/index/index.html">
 <meta property="og:site_name" content="Linluochen丶Blog">
-<meta property="og:description" content="先说一下啥是 Spring Boot ?&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spr">
+<meta property="og:description" content="先说一下啥是 Spring Boot ?&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 S">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190505141223252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NTM3NTQ2,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190505141738351.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NTM3NTQ2,size_16,color_FFFFFF,t_70">
@@ -123,10 +123,10 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190505153610674.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NTM3NTQ2,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190505153726753.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NTM3NTQ2,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190505173243350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NTM3NTQ2,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-06-11T06:55:53.386Z">
+<meta property="og:updated_time" content="2019-08-15T06:45:37.337Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Boot 实战 ：入门篇">
-<meta name="twitter:description" content="先说一下啥是 Spring Boot ?&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spr">
+<meta name="twitter:description" content="先说一下啥是 Spring Boot ?&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 S">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190505141223252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NTM3NTQ2,size_16,color_FFFFFF,t_70">
 
 
@@ -435,12 +435,24 @@
                 
               
 
-              <time title="创建时间：2019-06-11 11:50:39 / 修改时间：14:55:53" itemprop="dateCreated datePublished" datetime="2019-06-11T11:50:39+08:00">2019-06-11</time>
+              <time title="创建时间：2019-06-11 11:50:39" itemprop="dateCreated datePublished" datetime="2019-06-11T11:50:39+08:00">2019-06-11</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-15 14:45:37" itemprop="dateModified" datetime="2019-08-15T14:45:37+08:00">2019-08-15</time>
               
             
           </span>
@@ -527,7 +539,9 @@
       
 
       
-        <h3 id="先说一下啥是-Spring-Boot"><a href="#先说一下啥是-Spring-Boot" class="headerlink" title="先说一下啥是 Spring Boot ?"></a>先说一下啥是 Spring Boot ?</h3><p>&ensp;&ensp;&ensp;&ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。<a id="more"></a>同时它集成了大量常用的第三方库配置，Spring Boot应用中这些第三方库几乎可以是零配置的开箱即用（out-of-the-box），大部分的 Spring Boot 应用都只需要非常少量的配置代码（基于 Java 的配置），开发者能够更加专注于业务逻辑。（虽然我觉得写这个没多大意义吧。。但是还是要科普一下）</p>
+        <meta name="referrer" content="no-referrer">
+
+<h3 id="先说一下啥是-Spring-Boot"><a href="#先说一下啥是-Spring-Boot" class="headerlink" title="先说一下啥是 Spring Boot ?"></a>先说一下啥是 Spring Boot ?</h3><p>&ensp;&ensp;&ensp;&ensp;Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。Spring Boot 并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。<a id="more"></a>同时它集成了大量常用的第三方库配置，Spring Boot应用中这些第三方库几乎可以是零配置的开箱即用（out-of-the-box），大部分的 Spring Boot 应用都只需要非常少量的配置代码（基于 Java 的配置），开发者能够更加专注于业务逻辑。（虽然我觉得写这个没多大意义吧。。但是还是要科普一下）</p>
 <h3 id="Spring-Boot-优势有哪些-（反正就是各种简化）"><a href="#Spring-Boot-优势有哪些-（反正就是各种简化）" class="headerlink" title="Spring Boot 优势有哪些 ? （反正就是各种简化）"></a>Spring Boot 优势有哪些 ? （反正就是各种简化）</h3><p>&ensp;&ensp;&ensp;&ensp;1.创建独立的Spring应用程序<br>&ensp;&ensp;&ensp;&ensp;2. 嵌入的Tomcat，无需部署WAR文件<br>&ensp;&ensp;&ensp;&ensp;3. 简化Maven配置<br>&ensp;&ensp;&ensp;&ensp;4. 自动配置Spring<br>&ensp;&ensp;&ensp;&ensp;5. 提供生产就绪型功能，如指标，健康检查和外部配置<br>&ensp;&ensp;&ensp;&ensp;6. 绝对没有代码生成并且对XML也没有配置要求</p>
 <p>介绍到此结束，下面进入正题！！</p>
 <hr>
