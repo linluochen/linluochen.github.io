@@ -103,16 +103,21 @@
 
 
 
-  <meta name="description" content="热爱瞎搞的可爱boy">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Linluochen丶Blog">
-<meta property="og:url" content="http://linluochen.cn/archives/index.html">
+  <meta name="description" content="什么是 Requests 库&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Requests 是一常用的 http 请求库，它使用 python 语言编写，可以方便地发送 http 请求，以及方便地处理响应结果。">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 基础爬虫（二）Requests库">
+<meta property="og:url" content="http://linluochen.cn/2020/06/04/python/requests/index.html">
 <meta property="og:site_name" content="Linluochen丶Blog">
-<meta property="og:description" content="热爱瞎搞的可爱boy">
+<meta property="og:description" content="什么是 Requests 库&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Requests 是一常用的 http 请求库，它使用 python 语言编写，可以方便地发送 http 请求，以及方便地处理响应结果。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200604150959692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xpbl9CbG9nXw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200604151418976.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xpbl9CbG9nXw==,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2020-06-04T08:47:37.422Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linluochen丶Blog">
-<meta name="twitter:description" content="热爱瞎搞的可爱boy">
+<meta name="twitter:title" content="Python 基础爬虫（二）Requests库">
+<meta name="twitter:description" content="什么是 Requests 库&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Requests 是一常用的 http 请求库，它使用 python 语言编写，可以方便地发送 http 请求，以及方便地处理响应结果。">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200604150959692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xpbl9CbG9nXw==,size_16,color_FFFFFF,t_70">
 
 
 
@@ -122,7 +127,7 @@
 
   
   
-  <link rel="canonical" href="http://linluochen.cn/archives/">
+  <link rel="canonical" href="http://linluochen.cn/2020/06/04/python/requests/">
 
 
 
@@ -132,7 +137,7 @@
   };
 </script>
 
-  <title>归档 | Linluochen丶Blog</title>
+  <title>Python 基础爬虫（二）Requests库 | Linluochen丶Blog</title>
   
 
 
@@ -180,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -269,7 +274,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -316,28 +321,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -383,153 +366,398 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
-          </div>
-        
-        
-
-        
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://linluochen.cn/2020/06/04/python/requests/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="林洛尘">
+      <meta itemprop="description" content="热爱瞎搞的可爱boy">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Linluochen丶Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2020/06/04/python/introduce/" itemprop="url">
+        
+          <h1 class="post-title" itemprop="name headline">Python 基础爬虫（二）Requests库
+
+              
             
-              <span itemprop="name">Python 基础爬虫（一）介绍篇</span>
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
             
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-06-04T10:46:39+08:00" content="2020-06-04">
-          06-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/06/04/python/requests/" itemprop="url">
             
-              <span itemprop="name">Python 基础爬虫（二）Requests库</span>
             
-          </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-06-04T10:46:39+08:00" content="2020-06-04">
-          06-04
-        </time>
-      </div>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
-    </header>
-  </article>
+              
+                
+              
 
+              <time title="创建时间：2020-06-04 10:46:39 / 修改时间：16:47:37" itemprop="dateCreated datePublished" datetime="2020-06-04T10:46:39+08:00">2020-06-04</time>
+            
 
+            
+              
 
-      
+              
+            
+          </span>
 
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/06/11/hello-world/" itemprop="url">
+            <span class="post-category">
             
-              <span itemprop="name">初来乍到的洛尘</span>
+              <span class="post-meta-divider">|</span>
             
-          </a>
-        
-      </h2>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-11T11:50:39+08:00" content="2019-06-11">
-          06-11
-        </time>
-      </div>
+                
+                
+              
+            </span>
+          
 
-    </header>
-  </article>
+          
+            
+            
+          
 
+          
+          
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.7k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">4 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <meta name="referrer" content="no-referrer">
+
+<h2 id="什么是-Requests-库"><a href="#什么是-Requests-库" class="headerlink" title="什么是 Requests 库"></a>什么是 Requests 库</h2><p>&ensp;&ensp;&ensp;&ensp;Requests 是一常用的 http 请求库，它使用 python 语言编写，可以方便地发送 http 请求，以及方便地处理响应结果。<a id="more"></a></p>
+<hr>
+<h2 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h2><p>&ensp;&ensp;&ensp;&ensp;博主使用的是 IDE 系列的 PyCharm 一个很好用的神器（不是打广告！！是真的好用！！！）</p>
+<h2 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a>安装方式</h2><p>&ensp;&ensp;&ensp;&ensp;1.windows + R 输入 cmd 右键管理员运行，输入 pip insrall requests<br>&ensp;&ensp;&ensp;&ensp;2.使用 Anaconda 版本的朋友 在命令窗口输入 conda install requests<br>&ensp;&ensp;&ensp;&ensp;3.使用 PyCharm 进行安装 file-》default settings-》project interpreter-》搜索 requests-》install package-》ok<br><img src="https://img-blog.csdnimg.cn/20200604150959692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xpbl9CbG9nXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><p>&ensp;&ensp;&ensp;&ensp;打开我们的 PyCharm 工具，新建一个 Python 文件，在目录右键新建一个 Python 文件，然后输入文件名称，然后回车就行了<br><img src="https://img-blog.csdnimg.cn/20200604151418976.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xpbl9CbG9nXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="先写一个最简单的爬虫（GET-请求）"><a href="#先写一个最简单的爬虫（GET-请求）" class="headerlink" title="先写一个最简单的爬虫（GET 请求）"></a>先写一个最简单的爬虫（GET 请求）</h3><p>&ensp;&ensp;&ensp;&ensp;我们的第一行代码首先是导入刚刚引入的 requests 库</p>
+<pre><code class="bash">import requests
+</code></pre>
+<p>&ensp;&ensp;&ensp;&ensp;输入想要访问的目标网址并且获取他的响应状态，直接输入 <code>requests.get(&#39;目标网址&#39;)</code> 默认返回的是响应状态和响应对象</p>
+<pre><code class="bash">requests.get(<span class="string">'http://www.baidu.com'</span>)  <span class="comment"># 要访问的目标网址</span>
+<span class="built_in">print</span>(requests.get(<span class="string">'http://www.baidu.com'</span>)) <span class="comment"># 输出目标网址的响应状态</span>
+</code></pre>
+<p>&ensp;&ensp;&ensp;&ensp;完整代码如下，这个 <code>if __name__ == &quot;__main__&quot;:</code> 相当于 Java 里边的 main 方法</p>
+<pre><code class="bash">import requests
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    <span class="comment">#指定请求的url地址</span>
+    url = <span class="string">'http://www.baidu.com'</span>
+    <span class="comment">#使用requests模块的get函数根据指定的url发起一个get请求，get函数返回一个响应对象</span>
+    response = requests.get(url)
+    <span class="comment">#打印响应对象（结果：响应对象类型和响应状态码）</span>
+    <span class="built_in">print</span>(response)
+</code></pre>
+<h4 id="属性介绍"><a href="#属性介绍" class="headerlink" title="属性介绍"></a>属性介绍</h4><p>&ensp;&ensp;&ensp;&ensp;使用 requests 模块向百度首页面发起一个 get 请求，获取响应对象</p>
+<pre><code class="bash">import requests
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    <span class="comment">#指定请求的url</span>
+    url = <span class="string">'http://www.baidu.com'</span>
+    <span class="comment">#使用requests模块的get函数根据指定的url发起一个get请求，get函数返回一个响应对象</span>
+    response = requests.get(url)
+
+    <span class="comment">#获取请求的url</span>
+    <span class="built_in">print</span>(<span class="string">'请求的url:'</span>+response.url)
+
+    <span class="comment">#获取响应状态码</span>
+    <span class="built_in">print</span>(response.status_code)
+
+    <span class="comment">#获取响应内容的编码格式,可以通过该属性修改响应的编码格式，直接以赋值的形式就可以修改响应的编码方式，一般出现乱码是我们需要进行设置</span>
+    <span class="built_in">print</span>(<span class="string">'响应内容编码：'</span>+response.encoding)
+
+    <span class="comment">#获取响应对象的响应头信息：</span>
+    <span class="built_in">print</span>(response.headers)
+
+    <span class="comment">#获取字符串形式的响应内容，即是我们通过审查元素看到的HTML内容</span>
+    <span class="built_in">print</span>(response.text)
+
+    <span class="comment">#获取字节形式的响应内容，是bytes类型，一般我们请求图频、音频、视频需要用到字节流形式的响应内容</span>
+    <span class="built_in">print</span>(response.content)
+</code></pre>
+<h4 id="设置响应头"><a href="#设置响应头" class="headerlink" title="设置响应头"></a>设置响应头</h4><p>&ensp;&ensp;&ensp;&ensp;在请求头中有一个参数为User-Agent，<spen style="color:red">表示含义为请求载体的身份标识</spen>。通过浏览器发起的请求，请求载体为浏览器，则该请求的<spen style="color:red">User-Agent为浏览器的身份标识</spen>，使用爬虫程序发起的请求，则该请求的载体为爬虫程序，则该请求的User-Agent为爬虫程序的身份标识。<spen style="color:red">爬虫程序想要尽可能的模拟浏览器发起的请求，则必须将User-Agent修改成浏览器的身份标识</spen>。</p>
+<p><spen style="color:red"><strong>注意：User-Agent的定制其实是一种反反爬虫的初级技术手段。所以在编写爬虫程序时，必须对User-Agent进行手动定制。User-Agent的值可以通过抓包工具从浏览器请求的请求头中获取。</strong></spen></p>
+<pre><code class="bash">import requests
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    <span class="comment">#指定请求的url</span>
+    url = <span class="string">'http://www.baidu.com'</span>
+    <span class="comment">#定制请求头信息，相关的头信息必须封装在字典结构中</span>
+    headers = {
+        <span class="comment">#定制请求头中的User-Agent参数，当然也可以定制请求头中其他的参数</span>
+        <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'</span>,
+    }
+    <span class="comment">#使用requests模块的get函数根据指定的url发起一个get请求，get函数返回一个响应对象</span>
+    <span class="comment">#参数1：发起请求指定的url</span>
+    <span class="comment">#参数2：手动定制的请求头信息</span>
+    response = requests.get(url=url,headers=headers)
+    <span class="comment">#打印响应的状态码</span>
+    <span class="built_in">print</span>(response.status_code)
+</code></pre>
+<h4 id="携带参数的-GET-请求"><a href="#携带参数的-GET-请求" class="headerlink" title="携带参数的 GET 请求"></a>携带参数的 GET 请求</h4><p><spen style="color:red"><strong>注意：url有一个显著的特性。url必须是使用ASCII进行编码的字符方可生效。但是在requests模块中，即使url中存在非ASCII字符，那么requests会对其自动进行转化。</strong></spen></p>
+<pre><code class="bash">import requests
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    <span class="comment">#指定请求的url：可以将get请求携带的参数拼接到url域名后面，但是不建议大家这么做，一般我们将携带的参数以键值对的形式封装到字典中，操作见下方：</span>
+    <span class="comment">#url = 'http://www.baidu.com/s?ie=utf-8&amp;wd=周杰伦'</span>
+
+    <span class="comment">#建议做法：指定请求网页的域名</span>
+    url = <span class="string">'https://www.baidu.com/s'</span>
+    <span class="comment">#将请求携带的参数以键值对的形式封装到字典中，准备待用</span>
+    param = {
+        <span class="string">'ie'</span> : <span class="string">'utf-8'</span>,
+        <span class="string">'wd'</span> : <span class="string">'星星'</span>
+    }
+    <span class="comment">#定制请求头信息，相关的头信息必须封装在字典结构中</span>
+    headers = {
+        <span class="comment">#定制请求头中的User-Agent参数，当然也可以定制请求头中其他的参数</span>
+        <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'</span>,
+    }
+    <span class="comment">#使用requests模块的get函数根据指定的url发起一个get请求，get函数返回一个响应对象，get中传入的三个参数如下：</span>
+    <span class="comment">#参数1：发起请求指定的url</span>
+    <span class="comment">#参数2：手动定制的请求头信息</span>
+    <span class="comment">#参数3：指定请求携带的参数</span>
+    response = requests.get(url=url,headers=headers,params=param)
+    <span class="comment">#设置响应内容的编码格式（如果写入文件内容出现乱码的话）</span>
+    response.encoding = <span class="string">'utf-8'</span>
+    <span class="comment">#获取响应的网页内容，存储的文件名我们也可以根据用户输入，存成一个动态文件名</span>
+    page_data = response.text
+    with open(<span class="string">'./星星.html'</span>,<span class="string">'w'</span>) as fp:
+        fp.write(page_data)
+</code></pre>
+<h3 id="写一个最简单的爬虫（POST-请求）"><a href="#写一个最简单的爬虫（POST-请求）" class="headerlink" title="写一个最简单的爬虫（POST 请求）"></a>写一个最简单的爬虫（POST 请求）</h3><h4 id="携带参数的-POST-请求"><a href="#携带参数的-POST-请求" class="headerlink" title="携带参数的 POST 请求"></a>携带参数的 POST 请求</h4><p><spen style="color:red"><strong>注意：这个地方有一个小坑，使用 GET 方法带参数请求时，是 params=参数字典，而不是 data，data 是POST 方法的参数</strong></spen></p>
+<pre><code class="bash">import requests
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+
+    <span class="comment">#指定post请求的url</span>
+    url = <span class="string">'https://fanyi.baidu.com/sug'</span>
+
+    <span class="comment">#定制请求头信息，相关的头信息必须封装在字典结构中</span>
+    headers = {
+        <span class="comment">#定制请求头中的User-Agent参数，将爬虫伪装的更像浏览器，当然也可以定制请求头中其他的参数</span>
+        <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'</span>,
+    }
+
+    <span class="comment">#定制post请求携带的参数,可以使用抓包工具看需要传哪些参数，如Fiddler抓包工具</span>
+    data = {
+        <span class="string">'kw'</span> : <span class="string">'dog'</span>
+    }
+    <span class="comment">#使用requests模块的post函数根据指定的url发起一个post请求，post函数返回一个响应对象</span>
+    <span class="comment">#参数1：发起请求指定的url</span>
+    <span class="comment">#参数2：手动定制的请求头信息</span>
+    <span class="comment">#参数3：指定请求携带的参数</span>
+    response = requests.post(url=url,headers=headers,data=data)
+
+    <span class="comment">#获取响应内容：响应内容为json串</span>
+    <span class="built_in">print</span>(response.text)
+</code></pre>
+<h3 id="其他请求"><a href="#其他请求" class="headerlink" title="其他请求"></a>其他请求</h3><p>&ensp;&ensp;&ensp;&ensp;Requests 的功能那么强大当然不仅仅限于 GET 和 POST 请求啦，其他一些请求例如 put 请求、delete 请求、head 请求、option 请求等其实都是类似的，但是平时用的不多，就不仔细介绍了，有用到的可以去看官网文档哦。</p>
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>下一张的内容就是 BeautifulSoup 库，我们的解析库！<br>本文借鉴于：<a href="https://www.cnblogs.com/sui776265233/p/9703712.html" target="_blank" rel="noopener">Requests 库介绍</a>和<a href="https://www.cnblogs.com/Albert-Lee/p/6230337.html" target="_blank" rel="noopener">基础入门</a></p>
+
+      
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.jpg" alt="林洛尘 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="林洛尘 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/11/hello-world/" rel="next" title="初来乍到的洛尘">
+                <i class="fa fa-chevron-left"></i> 初来乍到的洛尘
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/04/python/introduce/" rel="prev" title="Python 基础爬虫（一）介绍篇">
+                Python 基础爬虫（一）介绍篇 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -549,8 +777,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -695,6 +932,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-Requests-库"><span class="nav-number">1.</span> <span class="nav-text">什么是 Requests 库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行环境"><span class="nav-number">2.</span> <span class="nav-text">运行环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装方式"><span class="nav-number">3.</span> <span class="nav-text">安装方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方式"><span class="nav-number">4.</span> <span class="nav-text">使用方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先写一个最简单的爬虫（GET-请求）"><span class="nav-number">4.1.</span> <span class="nav-text">先写一个最简单的爬虫（GET 请求）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性介绍"><span class="nav-number">4.1.1.</span> <span class="nav-text">属性介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置响应头"><span class="nav-number">4.1.2.</span> <span class="nav-text">设置响应头</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#携带参数的-GET-请求"><span class="nav-number">4.1.3.</span> <span class="nav-text">携带参数的 GET 请求</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写一个最简单的爬虫（POST-请求）"><span class="nav-number">4.2.</span> <span class="nav-text">写一个最简单的爬虫（POST 请求）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#携带参数的-POST-请求"><span class="nav-number">4.2.1.</span> <span class="nav-text">携带参数的 POST 请求</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他请求"><span class="nav-number">4.3.</span> <span class="nav-text">其他请求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后话"><span class="nav-number">5.</span> <span class="nav-text">后话</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -832,6 +1086,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -847,6 +1105,37 @@
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '911a6e94c9d4c8a96d20',
+    clientSecret: '4a2d60ac9513d7014e0b31ebe80810a50022d040',
+    repo: 'linluochen.github.io',
+    owner: 'linluochen',
+    admin: ['linluochen'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
